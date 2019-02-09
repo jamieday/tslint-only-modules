@@ -1,0 +1,16 @@
+{
+  "name": "tslint-only-modules",
+  "version": "1.0.0",
+  "description": "TSLint rule that restricts affected files to be modules",
+  "main": "index.js",
+  "dependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.24"
+  },
+  "scripts": {},
+  "author": "Jamie Day <jamie@jamieday.ca>",
+  "license": "MIT"
+}
