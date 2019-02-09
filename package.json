@@ -3,14 +3,23 @@
   "version": "1.0.1",
   "description": "TSLint rule that restricts affected files to be modules",
   "main": "tslint-only-modules.json",
-  "dependencies": {
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
+  "dependencies": {},
+  "peerDependencies": {
+    "tslint": "^5.1.0",
+    "typescript": ">=2.1.0 || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev"
   },
   "devDependencies": {
-    "@types/node": "^10.12.24"
+    "@types/node": "^10.12.24",
+    "tslint": "^5.12.1",
+    "typescript-tslint-plugin": "^0.3.1",
+    "typescript": "^3.3.3"
   },
-  "scripts": {},
+  "scripts": {
+    "copy": "cp -f package.json README.md LICENSE tslint-only-modules.json build/",
+    "build": "tsc -p ./ && npm run copy",
+    "clean": "rm -rf build/",
+    "rebuild": "npm run clean && npm run build"
+  },
   "author": "Jamie Day <jamie@jamieday.ca>",
   "license": "MIT"
 }

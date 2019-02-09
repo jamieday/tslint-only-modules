@@ -1,5 +1,5 @@
 {
-  "rulesDirectory": "./src",
+  "rulesDirectory": "./rules",
   "rules": {
     "only-modules": true
   }

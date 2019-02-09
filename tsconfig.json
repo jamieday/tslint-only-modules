@@ -1,17 +1,32 @@
 {
   "compilerOptions": {
-    "lib": ["es2015"],
+    "declaration": true,
+    "lib": ["es6"],
+    "outDir": "build/",
+    "rootDir": "src/",
     "target": "es5",
     "module": "commonjs",
+    "sourceMap": false,
     "importHelpers": true,
+    
     "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "suppressImplicitAnyIndexErrors": true,
     "strict": true,
     "pretty": true,
-    "removeComments": true
-  }
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin",
+        "alwaysShowRuleFailuresAsWarnings": true,
+        "ignoreDefinitionFiles": true
+      }
+    ]
+  },
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
 }
