@@ -21,5 +21,9 @@
     "rebuild": "npm run clean && npm run build"
   },
   "author": "Jamie Day <jamie@jamieday.ca>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamieday/tslint-only-modules.git"
+  },
   "license": "MIT"
 }
