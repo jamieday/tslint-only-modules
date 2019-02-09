@@ -1,6 +1,6 @@
 {
   "name": "tslint-only-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TSLint rule that restricts affected files to be modules",
   "main": "index.js",
   "dependencies": {
