@@ -1,6 +1,6 @@
 {
   "name": "tslint-only-modules",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TSLint rule that restricts affected files to be modules",
   "main": "tslint-only-modules.json",
   "dependencies": {},
