@@ -18,7 +18,8 @@
     "copy": "cp -f package.json README.md LICENSE tslint-only-modules.json build/",
     "build": "tsc -p ./ && npm run copy",
     "clean": "rm -rf build/",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "publish": "npm run rebuild && npm publish build/"
   },
   "author": "Jamie Day <jamie@jamieday.ca>",
   "repository": {
