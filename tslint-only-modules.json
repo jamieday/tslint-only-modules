@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": "./src",
+  "rules": {
+    "only-modules": true
+  }
+}
