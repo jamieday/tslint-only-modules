@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 pushd $(dirname $0)/..
-  npm run clean
-  npm run build
-  npm run copy
+  yarn clean
+  yarn build
+  yarn copy
   npm publish build/
 popd
